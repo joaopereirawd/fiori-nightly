@@ -1,0 +1,9 @@
+
+// should be declared before the scss import
+$fd-icons-path : "../scss/fiori-fundamentals/scss/icons/"; 
+$fd-scss-font-path : "../scss/fiori-fundamentals/scss/fonts/";
+@import "../scss/fiori-fundamentals/scss/all";
+
+/* Custom scss */
+@import "components/shellbar";
+@import "components/shell-app";
