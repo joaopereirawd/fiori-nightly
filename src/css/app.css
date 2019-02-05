@@ -8964,6 +8964,101 @@ see layouts/panel
   text-align: right; }
 
 /* Custom scss */
+/* Application */
+/* Colors */
+body {
+  background: #ecf3fe; }
+
+.fd-image--xl {
+  width: 120px;
+  height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  min-width: 120px;
+  min-height: 120px; }
+
+/******************************************
+   *
+   * Profile Panel
+   *
+******************************************/
+.sdf-profile-panel .sdf-profile-photo-wrapper {
+  position: relative; }
+  .sdf-profile-panel .sdf-profile-photo-wrapper:before {
+    position: absolute;
+    content: "";
+    width: 135px;
+    height: 135px;
+    background: #00308712;
+    top: 3px;
+    left: 8px;
+    border-radius: 50%;
+    z-index: 1; }
+
+.sdf-profile-panel .fd-tile__content {
+  padding-left: 30px; }
+  .sdf-profile-panel .fd-tile__content h2 {
+    color: #000;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 10px; }
+
+/******************************************
+   *
+   * ROFF SDF PANEL
+   *
+******************************************/
+.rsdf-panel {
+  overflow: hidden;
+  border-radius: 5px;
+  min-height: 300px; }
+  .rsdf-panel h2 {
+    color: #009cde;
+    font-size: 20px;
+    font-weight: 600; }
+  .rsdf-panel.highlighted {
+    background: #009cde; }
+    .rsdf-panel.highlighted .fd-tile {
+      background: transparent; }
+      .rsdf-panel.highlighted .fd-tile h2 {
+        color: #fff; }
+      .rsdf-panel.highlighted .fd-tile p {
+        color: #fff; }
+    .rsdf-panel.highlighted p {
+      color: #fff; }
+
+/******************************************
+   *
+   * Tables
+   *
+******************************************/
+.table-content {
+  overflow: auto; }
+  .table-content table {
+    border: none; }
+
+/******************************************
+   *
+   * Helper Classes
+   *
+******************************************/
+.rsdf-no-padding {
+  padding: 0px; }
+
+.rsdf-no-background {
+  background: none; }
+
+.rsdf-no-shadow {
+  box-shadow: none; }
+
+/******************************************
+   *
+   * PopOver
+   *
+******************************************/
+.fd-popover__body {
+  border: none; }
+
 .fd-shellbar {
   padding-top: 39.5px;
   padding-bottom: 39.5px;

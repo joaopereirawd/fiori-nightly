@@ -1,0 +1,114 @@
+.fd-image--xl {
+    width: 120px;
+    height: 120px;
+    max-width: 120px;
+    max-height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+}
+
+/******************************************
+   *
+   * Profile Panel
+   *
+******************************************/
+.sdf-profile-panel {
+    .sdf-profile-photo-wrapper {
+        position:relative;
+            &:before {
+                position: absolute;
+                content: "";
+                width: 135px;
+                height: 135px;
+                background: #00308712;
+                top: 3px;
+                left: 8px;
+                border-radius: 50%;
+                z-index: 1;
+            }             
+    }
+    .fd-tile__content {
+        padding-left:30px;
+        h2 {
+            color: #000;
+            font-size:35px;
+            line-height: 35px;
+            margin-bottom: 10px;
+        }
+        p {}
+    }
+}
+
+
+
+
+/******************************************
+   *
+   * ROFF SDF PANEL
+   *
+******************************************/
+.rsdf-panel {
+        overflow: hidden;
+        border-radius:5px;
+        min-height:300px;
+    h2 {
+        color:$brand-color_2;
+        font-size:20px;
+        font-weight:600;
+    }
+    &.highlighted {
+        background:$brand-color_2;
+            .fd-tile {
+                background:transparent;
+                    h2 {
+                        color:#fff;
+                    }
+                    p {
+                        color:#fff;
+                    }
+            }
+            p {
+                color:#fff;
+            }
+    }
+}
+
+
+/******************************************
+   *
+   * Tables
+   *
+******************************************/
+.table-content {
+    overflow:auto;
+    table {
+        border:none;
+    }
+}
+/******************************************
+   *
+   * Helper Classes
+   *
+******************************************/
+
+.rsdf-no-padding {
+    padding:0px;
+}
+
+.rsdf-no-background {
+    background:none;
+}
+
+.rsdf-no-shadow {
+    box-shadow: none;
+}
+
+
+/******************************************
+   *
+   * PopOver
+   *
+******************************************/
+.fd-popover__body {
+    border:none;
+}
