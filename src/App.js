@@ -8,7 +8,11 @@ import RSDF_Table from './components/rsdf-table.js';
 class App extends Component {
   constructor(props) {
     super(props);
-  
+
+      this.state = {
+        sideBarOpen: false
+      }
+
       this.profile = {
         initials: 'DA',
         userName: 'Sophie',
@@ -86,12 +90,23 @@ class App extends Component {
     };
     
   }
+  sideBarToggle = (e) => {
+    this.setState({ sideBarOpen: !this.state.sideBarOpen })
+  }
   render() {
 
 
     return (
       <div className="App">
-        <div className="fd-shell fd-shell--fundamentals">
+        <div className="fd-shell fd-shell--fundamentals has-sidebar">
+
+                {/* RSDF Sidebar*/}
+                <div className={`rsdf-sidebar ${(this.state.sideBarOpen) ? 'active' : 'desactive'}`}>
+                    <div class="menu-wrapper" onClick={this.sideBarToggle}>
+                      <div className={`hamburger-menu ${(this.state.sideBarOpen) ? 'active' : 'desactive'}`} ></div>
+                    </div>
+                </div>
+
 
                 {/* Shellbar header container */}
                 <div className="fd-shell__header">
@@ -191,16 +206,18 @@ class App extends Component {
 
                                         <RSDF_Panel customClass="" colNumber={3}>
                                           <div className="rsdf-panel fd-panel">
-                                              <div class="fd-panel__body">
-                                                <Button className="paypal-btn-round send-money">
-                                                      <span>Enviar</span>
-                                                </Button>
-                                                <Button className="paypal-btn-round receive-money ">
-                                                    <span>Solicitar</span>
-                                                </Button>
-                                                <Button className="paypal-btn-round more-opts ">
-                                                    <span>Mais</span>
-                                                </Button>
+                                              <div className="fd-panel__body">
+                                                  <div className="rsdf-button-group">
+                                                      <Button className="paypal-btn-round send-money">
+                                                            <span>Enviar</span>
+                                                      </Button>
+                                                      <Button className="paypal-btn-round receive-money ">
+                                                          <span>Solicitar</span>
+                                                      </Button>
+                                                      <Button className="paypal-btn-round more-opts ">
+                                                          <span>Mais</span>
+                                                      </Button>                                                
+                                                </div>
                                               </div>
                                           </div>
                                         </RSDF_Panel>

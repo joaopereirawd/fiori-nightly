@@ -8969,39 +8969,109 @@ see layouts/panel
 body {
   background: #ecf3fe; }
 
-button.paypal-btn-round {
+.fd-shell.has-sidebar .fd-shell__header,
+.fd-shell.has-sidebar .fd-shell__app,
+.fd-shell.has-sidebar .fd-shell__footer {
+  padding-left: 70px; }
+
+.rsdf-button-group {
   position: relative;
-  border-radius: 50%;
+  text-align: center; }
+  .rsdf-button-group button.paypal-btn-round {
+    position: relative;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    max-height: inherit;
+    background: #009cde;
+    border: none;
+    margin: 10px; }
+    .rsdf-button-group button.paypal-btn-round:hover {
+      background-color: #008ac5; }
+    .rsdf-button-group button.paypal-btn-round:focus {
+      box-shadow: none; }
+    .rsdf-button-group button.paypal-btn-round.send-money {
+      background-image: url("../img/send-money.svg");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .rsdf-button-group button.paypal-btn-round.receive-money {
+      background-image: url("../img/receive-money.svg");
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .rsdf-button-group button.paypal-btn-round.more-opts {
+      background: none;
+      border: 1px solid #009cde; }
+      .rsdf-button-group button.paypal-btn-round.more-opts:hover {
+        background-color: #009cde; }
+    .rsdf-button-group button.paypal-btn-round span {
+      position: absolute;
+      width: 100%;
+      bottom: -20px;
+      left: 0px;
+      text-align: center;
+      color: #000; }
+
+.menu-wrapper {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30px;
+  height: 22px;
+  cursor: pointer; }
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 30px;
+  height: 2px; }
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(10px);
+  background: white;
+  transition: all 0ms 300ms; }
+  .hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0); }
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: white;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: white;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.rsdf-sidebar {
+  position: fixed;
   width: 70px;
-  height: 70px;
-  max-height: inherit;
-  background: #009cde;
-  border: none;
-  margin: 30px; }
-  button.paypal-btn-round:hover {
-    background-color: #008ac5; }
-  button.paypal-btn-round:focus {
-    box-shadow: none; }
-  button.paypal-btn-round.send-money {
-    background-image: url("../img/send-money.svg");
-    background-repeat: no-repeat;
-    background-position: center center; }
-  button.paypal-btn-round.receive-money {
-    background-image: url("../img/receive-money.svg");
-    background-repeat: no-repeat;
-    background-position: center center; }
-  button.paypal-btn-round.more-opts {
-    background: none;
-    border: 1px solid #009cde; }
-    button.paypal-btn-round.more-opts:hover {
-      background-color: #009cde; }
-  button.paypal-btn-round span {
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-    left: 0px;
-    text-align: center;
-    color: #000; }
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #012168;
+  z-index: 9999;
+  transition: ease-in-out .4s; }
+  .rsdf-sidebar.active {
+    width: 300px; }
 
 .fd-image--xl {
   width: 120px;
@@ -9106,26 +9176,28 @@ button.paypal-btn-round {
 .fd-popover__body {
   border: none; }
 
-.fd-shellbar {
-  padding-top: 39.5px;
-  padding-bottom: 39.5px;
-  background: #fff;
-  border-bottom: 1px solid #eee; }
-  .fd-shellbar .fd-button--shell:before {
-    font-size: 20px;
-    color: #009cde; }
-  .fd-shellbar .fd-counter--notification {
-    border-radius: 50px;
-    width: 20px;
-    height: 20px;
-    line-height: normal; }
-  .fd-shellbar .fd-search-input .fd-input {
-    background: none;
-    border: none;
-    border-radius: 0px;
-    border-bottom: 1px solid #d2d2d2;
-    color: grey;
-    padding-left: 0px; }
+.fd-shell__header {
+  height: auto; }
+  .fd-shell__header .fd-shellbar {
+    padding-top: 39.5px;
+    padding-bottom: 39.5px;
+    background: #fff;
+    border-bottom: 1px solid #eee; }
+    .fd-shell__header .fd-shellbar .fd-button--shell:before {
+      font-size: 20px;
+      color: #009cde; }
+    .fd-shell__header .fd-shellbar .fd-counter--notification {
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      line-height: normal; }
+    .fd-shell__header .fd-shellbar .fd-search-input .fd-input {
+      background: none;
+      border: none;
+      border-radius: 0px;
+      border-bottom: 1px solid #d2d2d2;
+      color: grey;
+      padding-left: 0px; }
 
 .fd-shell__app {
   margin-top: 80px;

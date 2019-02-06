@@ -1,0 +1,9 @@
+.fd-shell {
+    &.has-sidebar {
+        .fd-shell__header,
+        .fd-shell__app,
+        .fd-shell__footer {
+            padding-left:70px;
+        } 
+    }
+}

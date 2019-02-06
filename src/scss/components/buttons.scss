@@ -1,43 +1,47 @@
-button {
-    &.paypal-btn-round {
-        position:relative;
-        border-radius:50%;
-        width:70px;
-        height:70px;
-        max-height:inherit;
-        background:$brand-color_2;
-        border:none;
-        margin:30px;
-            &:hover {
-                background-color:darken($brand-color_2, 5%);
-            }
-            &:focus {
-                box-shadow:none;
-            }
-            &.send-money {
-                background-image:url('../img/send-money.svg');
-                background-repeat: no-repeat;   
-                background-position:center center;
-            }
-            &.receive-money {
-                background-image:url('../img/receive-money.svg');
-                background-repeat: no-repeat;   
-                background-position:center center;
-            }
-            &.more-opts {
-                background:none;
-                border:1px solid $brand-color_2;
-                    &:hover {
-                        background-color:$brand-color_2;
-                    }
-            }
-            span {
-                position:absolute;
-                width:100%;
-                bottom:-20px;
-                left:0px;
-                text-align: center; 
-                color:#000;
-            }
+.rsdf-button-group {
+    position:relative;
+    text-align:center;
+    button {
+        &.paypal-btn-round {
+            position:relative;
+            border-radius:50%;
+            width:70px;
+            height:70px;
+            max-height:inherit;
+            background:$brand-color_2;
+            border:none;
+            margin:10px;
+                &:hover {
+                    background-color:darken($brand-color_2, 5%);
+                }
+                &:focus {
+                    box-shadow:none;
+                }
+                &.send-money {
+                    background-image:url('../img/send-money.svg');
+                    background-repeat: no-repeat;   
+                    background-position:center center;
+                }
+                &.receive-money {
+                    background-image:url('../img/receive-money.svg');
+                    background-repeat: no-repeat;   
+                    background-position:center center;
+                }
+                &.more-opts {
+                    background:none;
+                    border:1px solid $brand-color_2;
+                        &:hover {
+                            background-color:$brand-color_2;
+                        }
+                }
+                span {
+                    position:absolute;
+                    width:100%;
+                    bottom:-20px;
+                    left:0px;
+                    text-align: center; 
+                    color:#000;
+                }
+        }
     }
 }
