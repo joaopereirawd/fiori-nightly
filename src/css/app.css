@@ -8969,6 +8969,40 @@ see layouts/panel
 body {
   background: #ecf3fe; }
 
+button.paypal-btn-round {
+  position: relative;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  max-height: inherit;
+  background: #009cde;
+  border: none;
+  margin: 30px; }
+  button.paypal-btn-round:hover {
+    background-color: #008ac5; }
+  button.paypal-btn-round:focus {
+    box-shadow: none; }
+  button.paypal-btn-round.send-money {
+    background-image: url("../img/send-money.svg");
+    background-repeat: no-repeat;
+    background-position: center center; }
+  button.paypal-btn-round.receive-money {
+    background-image: url("../img/receive-money.svg");
+    background-repeat: no-repeat;
+    background-position: center center; }
+  button.paypal-btn-round.more-opts {
+    background: none;
+    border: 1px solid #009cde; }
+    button.paypal-btn-round.more-opts:hover {
+      background-color: #009cde; }
+  button.paypal-btn-round span {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0px;
+    text-align: center;
+    color: #000; }
+
 .fd-image--xl {
   width: 120px;
   height: 120px;
@@ -9077,6 +9111,21 @@ body {
   padding-bottom: 39.5px;
   background: #fff;
   border-bottom: 1px solid #eee; }
+  .fd-shellbar .fd-button--shell:before {
+    font-size: 20px;
+    color: #009cde; }
+  .fd-shellbar .fd-counter--notification {
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    line-height: normal; }
+  .fd-shellbar .fd-search-input .fd-input {
+    background: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #d2d2d2;
+    color: grey;
+    padding-left: 0px; }
 
 .fd-shell__app {
   margin-top: 80px;

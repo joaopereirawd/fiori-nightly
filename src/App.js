@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/app.css';
-import { Shellbar, Menu, MenuList, MenuItem } from 'fundamental-react';
+import { Shellbar, Menu, MenuList, MenuItem, Button } from 'fundamental-react';
 import brandLogo from '../src/img/paypal.svg';
 import userPhoto from '../src/img/sophie.jpg';
 import RSDF_Panel from './components/rsdf-panel.js';
@@ -42,7 +42,49 @@ class App extends Component {
         { name: 'Settings', glyph: 'action-settings', size: 's', callback: () => alert('Settings selected!') },
         { name: 'Sign Out', glyph: 'log', size: 's', callback: () => alert('Sign Out selected!') }
       ];
-  
+
+    this.appSttings = [
+      {
+        glyph: 'action-settings',
+        label: 'Settings',
+        callback: () => alert('Settings selected!'),
+        menu: (
+          <Menu>
+            <MenuList>
+              <MenuItem url='/'>Option 1</MenuItem>
+              <MenuItem url='/'>Option 2</MenuItem>
+              <MenuItem url='/'>Option 3</MenuItem>
+            </MenuList>
+          </Menu>
+        )
+      }
+    ];
+
+    this.searchInput = {
+      label: 'Search',
+      glyph: 'search',
+      placeholder: 'Enter a fruit',
+      searchList: [
+        { text: 'apple', callback: () => alert('apple') },
+        { text: 'apricot', callback: () => alert('apricot') },
+        { text: 'acai', callback: () => alert('acai') },
+        { text: 'banana', callback: () => alert('banana') },
+        { text: 'berry', callback: () => alert('berry') },
+        { text: 'blueberry', callback: () => alert('blueberry') },
+        { text: 'blackberry', callback: () => alert('blackberry') },
+        { text: 'cranberry', callback: () => alert('cranberry') },
+        { text: 'conkerberry', callback: () => alert('conkerberry') },
+        { text: 'calabash', callback: () => alert('calabash') },
+        { text: 'clementines', callback: () => alert('clementines') },
+        { text: 'kiwi', callback: () => alert('kiwi') },
+        { text: 'orange', callback: () => alert('orange') }
+      ],
+      onSearch: function (searchTerm) {
+        alert(`Search fired for ${searchTerm}`);
+      },
+      callback: () => alert('Search selected!')
+    };
+    
   }
   render() {
 
@@ -55,9 +97,11 @@ class App extends Component {
                 <div className="fd-shell__header">
                   <Shellbar
                     logo={<img src={brandLogo} alt='SAP' />}
+                    actions={this.appSttings}
                     notifications={this.notifications}
                     productTitle={false}
                     profile={this.profile}
+                    searchInput={this.searchInput}
                     profileMenu={this.profileMenu} />
                 </div>
 
@@ -142,6 +186,23 @@ class App extends Component {
                                                   Carregue o seu saldo PayPal instantaneamente com Multibanco e compre com a segurança do PayPal em Portugal ou fora.
                                               </small>
                                             </div>
+                                        </RSDF_Panel>
+
+
+                                        <RSDF_Panel customClass="" colNumber={3}>
+                                          <div className="rsdf-panel fd-panel">
+                                              <div class="fd-panel__body">
+                                                <Button className="paypal-btn-round send-money">
+                                                      <span>Enviar</span>
+                                                </Button>
+                                                <Button className="paypal-btn-round receive-money ">
+                                                    <span>Solicitar</span>
+                                                </Button>
+                                                <Button className="paypal-btn-round more-opts ">
+                                                    <span>Mais</span>
+                                                </Button>
+                                              </div>
+                                          </div>
                                         </RSDF_Panel>
 
                                   </div>

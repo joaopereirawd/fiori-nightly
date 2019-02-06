@@ -7,6 +7,7 @@ $fd-scss-font-path : "../scss/fiori-fundamentals/scss/fonts/";
 /* Custom scss */
 @import "settings";
 @import "app-defaults";
+@import "components/buttons";
 @import "helpers";
 @import "components/shellbar";
 @import "components/shell-app";
