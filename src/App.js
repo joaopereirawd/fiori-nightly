@@ -134,7 +134,7 @@ class App extends Component {
                                                   <div class="fd-tile">
                                                     <div class="fd-tile__content">
                                                       <h2 class="fd-tile__title">Saldo Paypal</h2>
-                                                      <p>Não precisa de ter saldo para fazer compras e pagamentos online com PayPal.</p>
+                                                      <p>Não precisa de ter saldo para fazer compras e pagamentos online com PayPal. teste</p>
                                                     </div>
                                                   </div>
                                               </div>
