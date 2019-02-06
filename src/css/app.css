@@ -9011,11 +9011,24 @@ body {
 .rsdf-panel {
   overflow: hidden;
   border-radius: 5px;
-  min-height: 300px; }
+  min-height: 200px; }
   .rsdf-panel h2 {
     color: #009cde;
     font-size: 20px;
     font-weight: 600; }
+  .rsdf-panel p {
+    font-size: 18px;
+    font-weight: 100; }
+  .rsdf-panel.bottom-caption {
+    position: relative; }
+    .rsdf-panel.bottom-caption small {
+      position: absolute;
+      width: 100%;
+      padding: 25px 20px;
+      display: inline-block;
+      background-color: #F0FAFD;
+      bottom: 0px;
+      color: #6b6b6b; }
   .rsdf-panel.highlighted {
     background: #009cde; }
     .rsdf-panel.highlighted .fd-tile {

@@ -115,18 +115,34 @@ class App extends Component {
 
                               <section className="fd-section">
                                   <div className="fd-container fd-container--fluid">
+                                      
+                                        <div className="fd-col--3 fd-panel sdf-profile-panel rsdf-no-background rsdf-no-shadow">
+                                            <div className="fd-tile rsdf-no-background rsdf-no-shadow">
+                                              <div className="fd-tile__media sdf-profile-photo-wrapper">
+                                                <span className="fd-image--xl fd-image--circle" aria-label="TILE_MEDIA_ALT" style={{ backgroundImage: `url('${userPhoto}`}}></span>
+                                              </div>
+                                              <div className="fd-tile__content">
+                                                <h2 className="fd-tile__title">Bom Dia, <br></br> {this.profile.userName} </h2>
+                                                <p>Short Description available</p>
+                                              </div>
+                                            </div>
+                                        </div>
 
-                                    <div className="fd-panel sdf-profile-panel rsdf-no-background rsdf-no-shadow">
-                                          <div className="fd-tile rsdf-no-background rsdf-no-shadow">
-                                            <div className="fd-tile__media sdf-profile-photo-wrapper">
-                                              <span className="fd-image--xl fd-image--circle" aria-label="TILE_MEDIA_ALT" style={{ backgroundImage: `url('${userPhoto}`}}></span>
+                                        <RSDF_Panel customClass="" colNumber={5}>
+                                            <div className="rsdf-panel bottom-caption fd-panel">
+                                              <div class="fd-panel__body">
+                                                  <div class="fd-tile">
+                                                    <div class="fd-tile__content">
+                                                      <h2 class="fd-tile__title">Saldo Paypal</h2>
+                                                      <p>Não precisa de ter saldo para fazer compras e pagamentos online com PayPal.</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              <small>
+                                                  Carregue o seu saldo PayPal instantaneamente com Multibanco e compre com a segurança do PayPal em Portugal ou fora.
+                                              </small>
                                             </div>
-                                            <div className="fd-tile__content">
-                                              <h2 className="fd-tile__title">Bom Dia, <br></br> {this.profile.userName} </h2>
-                                              <p>Short Description available</p>
-                                            </div>
-                                          </div>
-                                      </div>
+                                        </RSDF_Panel>
 
                                   </div>
                               </section>

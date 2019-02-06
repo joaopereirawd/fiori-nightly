@@ -2,7 +2,7 @@
   "name": "fiori-nightly",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://joaopereirawd.github.io/fiori-nightly",
+  "homepage": "https://paypal-fiori.netlify.com",
   "dependencies": {
     "fundamental-react": "^0.3.0",
     "gulp": "^4.0.0",

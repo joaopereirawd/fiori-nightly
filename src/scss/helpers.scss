@@ -50,11 +50,27 @@
 .rsdf-panel {
         overflow: hidden;
         border-radius:5px;
-        min-height:300px;
+        min-height:200px;
     h2 {
         color:$brand-color_2;
         font-size:20px;
         font-weight:600;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 100;
+    }
+    &.bottom-caption {
+        position:relative;
+        small {
+            position: absolute;
+            width: 100%;
+            padding: 25px 20px;
+            display: inline-block;
+            background-color: #F0FAFD;
+            bottom: 0px;
+            color:#6b6b6b;
+        }
     }
     &.highlighted {
         background:$brand-color_2;
@@ -71,6 +87,7 @@
                 color:#fff;
             }
     }
+
 }
 
 
