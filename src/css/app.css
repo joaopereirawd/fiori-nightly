@@ -8972,7 +8972,13 @@ body {
 .fd-shell.has-sidebar .fd-shell__header,
 .fd-shell.has-sidebar .fd-shell__app,
 .fd-shell.has-sidebar .fd-shell__footer {
-  padding-left: 70px; }
+  padding-left: 70px;
+  transition: ease .5s; }
+
+.fd-shell.has-sidebar.active .fd-shell__header,
+.fd-shell.has-sidebar.active .fd-shell__app,
+.fd-shell.has-sidebar.active .fd-shell__footer {
+  padding-left: 250px; }
 
 .rsdf-button-group {
   position: relative;
@@ -9014,9 +9020,7 @@ body {
 .menu-wrapper {
   position: absolute;
   top: 25px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 20px;
   width: 30px;
   height: 22px;
   cursor: pointer; }
@@ -9069,9 +9073,15 @@ body {
   top: 0px;
   background-color: #012168;
   z-index: 9999;
-  transition: ease-in-out .4s; }
+  transition: ease-in-out .4s;
+  overflow: hidden; }
   .rsdf-sidebar.active {
-    width: 300px; }
+    width: 250px; }
+  .rsdf-sidebar .fd-app__navigation {
+    background: none;
+    margin-top: 80px; }
+    .rsdf-sidebar .fd-app__navigation .fd-side-nav {
+      background: none; }
 
 .fd-image--xl {
   width: 120px;

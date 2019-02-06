@@ -1,13 +1,21 @@
 .rsdf-sidebar {
-  position:fixed;
-  width:70px;
-  height:100%;
-  left:0px;
-  top:0px;
-  background-color: $brand-color_1;
-  z-index:9999;
+    position:fixed;
+    width:70px;
+    height:100%;
+    left:0px;
+    top:0px;
+    background-color: $brand-color_1;
+    z-index:9999;
     transition:ease-in-out .4s;
-    &.active {
-        width:300px;
-    }
+    overflow:hidden;
+        &.active {
+            width:250px;
+        }
+        .fd-app__navigation {
+            background:none;
+            margin-top:80px;
+                .fd-side-nav {
+                    background:none;
+                }
+        }
 }

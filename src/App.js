@@ -98,13 +98,54 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="fd-shell fd-shell--fundamentals has-sidebar">
-
+          <div className={`fd-shell fd-shell--fundamentals has-sidebar ${(this.state.sideBarOpen) ? 'active' : 'desactive'}`}>
                 {/* RSDF Sidebar*/}
                 <div className={`rsdf-sidebar ${(this.state.sideBarOpen) ? 'active' : 'desactive'}`}>
                     <div class="menu-wrapper" onClick={this.sideBarToggle}>
-                      <div className={`hamburger-menu ${(this.state.sideBarOpen) ? 'active' : 'desactive'}`} ></div>
+              <div className={`hamburger-menu ${(this.state.sideBarOpen) ? 'animate' : 'desactive'}`} ></div>
                     </div>
+            <div className="fd-app__navigation fd-app__navigation--vertical">
+              <nav className="fd-side-nav">
+                <ul className="fd-side-nav__list">
+                  <li className="fd-side-nav__item">
+                    <a className="fd-side-nav__link" href="#">
+                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
+                      Link icon
+                                </a>
+                  </li>
+                  <li className="fd-side-nav__item">
+                    <a className="fd-side-nav__link" href="#">
+                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
+                      Link icon
+                                </a>
+                  </li>
+                  <li className="fd-side-nav__item">
+                    <a className="fd-side-nav__link" href="#">
+                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
+                      Link icon
+                                </a>
+                  </li>
+                  <li className="fd-side-nav__item">
+                    <a className="fd-side-nav__link" href="#">
+                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
+                      Link icon
+                                </a>
+                  </li>
+                  <li className="fd-side-nav__item">
+                    <a className="fd-side-nav__link" href="#">
+                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
+                      Link icon
+                                </a>
+                  </li>
+                  <li className="fd-side-nav__item">
+                    <a className="fd-side-nav__link" href="#">
+                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
+                      Link icon
+                                </a>
+                  </li>
+                </ul>
+              </nav>
+            </div> 
                 </div>
 
 

@@ -6,9 +6,7 @@ $bar-spacing: 10px;
 .menu-wrapper {
   position: absolute;
   top: 25px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 20px;
   width: $bar-width;
   height: $bar-height + $bar-spacing*2;
   cursor: pointer;
