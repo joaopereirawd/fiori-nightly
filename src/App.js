@@ -121,14 +121,14 @@ class App extends Component {
                   </li>
                   <li className="fd-side-nav__item">
                     <a className="fd-side-nav__link" href="#">
-                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      <span className="fd-side-nav-name">Link icon</span>
+                      <span className="fd-side-nav__icon sap-icon--sys-prev-page sap-icon--l" role="presentation"></span>
+                      <span className="fd-side-nav-name">Enviar e Solicitar</span>
                     </a>
                   </li>
                   <li className="fd-side-nav__item">
                     <a className="fd-side-nav__link" href="#">
-                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      <span className="fd-side-nav-name">Link icon</span>
+                      <span className="fd-side-nav__icon sap-icon--wallet sap-icon--l" role="presentation"></span>
+                      <span className="fd-side-nav-name">Carteira</span>
                     </a>
                   </li>
                   <li className="fd-side-nav__item">
