@@ -3,6 +3,8 @@
 This is a first approach to SAP Fiori 3.0 with React.js. 
 For this I have chosen re-design user account of Paypal and develop an application with fiori-fundamentals framework.
 
+Demo:</br>
+https://paypal-fiori.netlify.com/
 
 ## Goals
 - Learn how to work in SAP Fiori 3.0 with react.js
