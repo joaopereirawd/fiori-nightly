@@ -109,39 +109,39 @@ class App extends Component {
                 <ul className="fd-side-nav__list">
                   <li className="fd-side-nav__item">
                     <a className="fd-side-nav__link" href="#">
-                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      Link icon
+                      <span className="fd-side-nav__icon sap-icon--dimension sap-icon--l" role="presentation"></span>
+                      <span className="fd-side-nav-name">Resumo</span>
+                      </a>
+                  </li>
+                  <li className="fd-side-nav__item">
+                    <a className="fd-side-nav__link" href="#">
+                      <span className="fd-side-nav__icon sap-icon--activities sap-icon--l" role="presentation"></span>
+                      <span className="fd-side-nav-name">Atividade</span>
                                 </a>
                   </li>
                   <li className="fd-side-nav__item">
                     <a className="fd-side-nav__link" href="#">
                       <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      Link icon
-                                </a>
+                      <span className="fd-side-nav-name">Link icon</span>
+                    </a>
                   </li>
                   <li className="fd-side-nav__item">
                     <a className="fd-side-nav__link" href="#">
                       <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      Link icon
-                                </a>
+                      <span className="fd-side-nav-name">Link icon</span>
+                    </a>
                   </li>
                   <li className="fd-side-nav__item">
                     <a className="fd-side-nav__link" href="#">
                       <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      Link icon
-                                </a>
+                      <span className="fd-side-nav-name">Link icon</span>
+                    </a>
                   </li>
                   <li className="fd-side-nav__item">
                     <a className="fd-side-nav__link" href="#">
                       <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      Link icon
-                                </a>
-                  </li>
-                  <li className="fd-side-nav__item">
-                    <a className="fd-side-nav__link" href="#">
-                      <span className="fd-side-nav__icon sap-icon--home sap-icon--l" role="presentation"></span>
-                      Link icon
-                                </a>
+                      <span className="fd-side-nav-name">Link icon</span>
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -152,6 +152,7 @@ class App extends Component {
                 {/* Shellbar header container */}
                 <div className="fd-shell__header">
                   <Shellbar
+                    copilot= {true}
                     logo={<img src={brandLogo} alt='SAP' />}
                     actions={this.appSttings}
                     notifications={this.notifications}

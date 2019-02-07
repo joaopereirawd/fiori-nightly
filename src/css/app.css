@@ -9075,13 +9075,29 @@ body {
   z-index: 9999;
   transition: ease-in-out .4s;
   overflow: hidden; }
-  .rsdf-sidebar.active {
-    width: 250px; }
   .rsdf-sidebar .fd-app__navigation {
     background: none;
     margin-top: 80px; }
     .rsdf-sidebar .fd-app__navigation .fd-side-nav {
       background: none; }
+      .rsdf-sidebar .fd-app__navigation .fd-side-nav .fd-side-nav__link,
+      .rsdf-sidebar .fd-app__navigation .fd-side-nav .fd-side-nav__sublink {
+        padding: 10px 25px;
+        color: #009cde; }
+      .rsdf-sidebar .fd-app__navigation .fd-side-nav .fd-side-nav__link:hover {
+        background-color: #011b54; }
+      .rsdf-sidebar .fd-app__navigation .fd-side-nav .fd-side-nav__link .fd-side-nav__icon {
+        padding-right: 40px;
+        transition: ease-in-out .5s; }
+      .rsdf-sidebar .fd-app__navigation .fd-side-nav .fd-side-nav__link .fd-side-nav-name {
+        opacity: 0;
+        transition: ease-in-out .5s; }
+  .rsdf-sidebar.active {
+    width: 250px; }
+    .rsdf-sidebar.active .fd-app__navigation .fd-side-nav .fd-side-nav__link .fd-side-nav__icon {
+      padding-right: inherit; }
+    .rsdf-sidebar.active .fd-app__navigation .fd-side-nav .fd-side-nav__link .fd-side-nav-name {
+      opacity: 1; }
 
 .fd-image--xl {
   width: 120px;
@@ -9187,7 +9203,8 @@ body {
   border: none; }
 
 .fd-shell__header {
-  height: auto; }
+  height: auto;
+  background: #fff; }
   .fd-shell__header .fd-shellbar {
     padding-top: 39.5px;
     padding-bottom: 39.5px;

@@ -8,14 +8,40 @@
     z-index:9999;
     transition:ease-in-out .4s;
     overflow:hidden;
-        &.active {
-            width:250px;
-        }
         .fd-app__navigation {
             background:none;
             margin-top:80px;
                 .fd-side-nav {
                     background:none;
+                    .fd-side-nav__link, 
+                    .fd-side-nav__sublink {
+                        padding: 10px 25px;
+                        color:$brand-color_2;
+                    }
+                    .fd-side-nav__link {
+                        &:hover {
+                            background-color:darken($brand-color_1, 4%);
+                        }
+                        .fd-side-nav__icon {
+                            padding-right:40px;
+                            transition:ease-in-out .5s;
+                        }
+                        .fd-side-nav-name {
+                            opacity:0;
+                            transition:ease-in-out .5s;
+                        }
+                    }
                 }
+        }
+        &.active {
+            width:250px;
+           .fd-app__navigation .fd-side-nav .fd-side-nav__link {
+                .fd-side-nav__icon {
+                    padding-right:inherit;
+                }  
+                .fd-side-nav-name {
+                    opacity:1;
+                }                             
+           }
         }
 }
