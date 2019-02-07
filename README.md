@@ -8,18 +8,9 @@ https://paypal-fiori.netlify.com/
 
 
 
-## Technologies I've used
-- node.js
-- npm
-- Yarn
-- React.js
-- Gulp.js
-- SASS
-
-
 ## Application environment
 - Application boilerplate with **[create-react-app](https://github.com/facebook/create-react-app)**
-
+- Application components by **[fundamental-react](https://github.com/SAP/fundamental-react)** library 
 
 ## Dev dependencies
 - fundamental-react
@@ -32,7 +23,16 @@ https://paypal-fiori.netlify.com/
 - react-scripts
 - sass-loader
 
+## Technologies I've used
+- node.js
+- npm
+- Yarn
+- React.js
+- Gulp.js
+- SASS
+
 ## Building, deployment, and management
+- Github
 - [Netlify](https://www.netlify.com/)
 
 
