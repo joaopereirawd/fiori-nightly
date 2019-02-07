@@ -17,11 +17,11 @@ https://paypal-fiori.netlify.com/
 - SASS
 
 
-## Application Environment
+## Application environment
 - Application boilerplate with **[create-react-app](https://github.com/facebook/create-react-app)**
 
 
-## Dev Dependencies
+## Dev dependencies
 - fundamental-react
 - gulp
 - gulp-sass
@@ -31,6 +31,10 @@ https://paypal-fiori.netlify.com/
 - react-dom
 - react-scripts
 - sass-loader
+
+## Building, deployment, and management
+- [Netlify](https://www.netlify.com/)
+
 
 ## Goals
 - Learn how to work in SAP Fiori 3.0 with react.js
