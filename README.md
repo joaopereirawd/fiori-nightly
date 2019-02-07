@@ -8,11 +8,11 @@ https://paypal-fiori.netlify.com/
 
 ## Goals
 - Learn how to work in SAP Fiori 3.0 with react.js
-- Create a custom theme with fiori-fundamentals framework
+- Create a custom theme with fiori fundamentals framework
 
 
 ## Disclaimer
-- **This application isn't an official Paypal Application**.
-- **I'm not working for Paypal or Receiving money of them**. 
+- **This application isn't an official Paypal application**.
+- **I'm not working for Paypal or receiving money of them**. 
 
-*I'm doing this as example just to learn more about fiori-fundamentals framework.*
+*I'm doing this as example just to learn more about [fiori-fundamentals](https://sap.github.io/fundamental/) framework.*
