@@ -5,6 +5,8 @@ import brandLogo from '../src/img/paypal.svg';
 import userPhoto from '../src/img/sophie.jpg';
 import RSDF_Panel from './components/rsdf-panel.js';
 import RSDF_Table from './components/rsdf-table.js';
+import RSDF_TableCards from './components/rsdf-table-cards';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -257,7 +259,7 @@ class App extends Component {
                                                           <span>Solicitar</span>
                                                       </Button>
                                                       <Button className="paypal-btn-round more-opts ">
-                                                          <span>Mais</span>
+                                                          <span>Visa</span>
                                                       </Button>                                                
                                                 </div>
                                               </div>
@@ -287,12 +289,12 @@ class App extends Component {
                                     <RSDF_Panel colNumber={3}>
                                       <div className="rsdf-panel fd-panel">
                                         <div class="fd-panel__body">
-                                          <div class="fd-tile">
-                                            <div class="fd-tile__content">
-                                              <h2 class="fd-tile__title">Bancos e Cartões</h2>
+                                            <div class="fd-tile">
+                                                <div class="fd-tile__content">
+                                                  <h2 class="fd-tile__title">Bancos e Cartões</h2>
+                                                </div>
                                             </div>
-                                          </div>
-                                          bancos e cartões
+                                            <RSDF_TableCards></RSDF_TableCards>
                                         </div>
                                       </div>
                                     </RSDF_Panel>
@@ -301,7 +303,6 @@ class App extends Component {
                                     <RSDF_Panel colNumber={3}>
                                       <div className="rsdf-panel fd-panel highlighted">
                                         <div class="fd-panel__body">
-
                                             <div class="fd-tile">
                                               <div class="fd-tile__content">
                                                 <h2 class="fd-tile__title">Enviar Dinheiro</h2>
@@ -313,8 +314,6 @@ class App extends Component {
                                             </p>
                                             <br></br>
                                             <p>Não partilhamos os seus dados com ninguém.</p>
-
-
                                         </div>
                                       </div>
                                     </RSDF_Panel>

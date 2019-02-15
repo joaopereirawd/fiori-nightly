@@ -98,10 +98,11 @@
 ******************************************/
 .table-content {
     overflow:auto;
-    table {
-        border:none;
-    }
+        table {
+            border:none;
+        }
 }
+
 /******************************************
    *
    * Helper Classes
@@ -120,7 +121,6 @@
     box-shadow: none;
 }
 
-
 /******************************************
    *
    * PopOver
@@ -128,4 +128,55 @@
 ******************************************/
 .fd-popover__body {
     border:none;
+}
+
+.creditcard-table.fd-table {
+    border:none !important;
+    tbody {
+
+        tr  {
+            border:none !important;
+            border-bottom:1px solid #eee !important;
+                &:last-child {
+                    border-bottom:none !important;
+                }    
+        }  
+          
+        td {
+            padding: 2px 14px;
+        }    
+    }
+}
+
+.creditcard-table-wrapper {
+    max-height: 197px;
+    overflow: auto;
+}
+
+.credit-card-img {
+    position:relative;
+    display: inline-block;
+    left:-9px;
+    float:left;
+}
+
+.credit-card-info {
+    position: relative;
+    color:#979797; 
+    top:4px;
+    float:left;
+        span {
+            &.cname {
+                position:relative;
+                font-size:18px;
+                width:100%;
+                display: inline-block;
+                line-height:normal;
+                color:#000;
+            }
+            &.clabel {
+                width:100%;
+                font-size:10px;
+            }
+        }
 }
