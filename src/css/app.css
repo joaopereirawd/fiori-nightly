@@ -9034,6 +9034,8 @@ body {
       border: none;
       font-size: 12px;
       letter-spacing: .5px; }
+    .panel-controllers .fd-button.rsdf-default-button:hover {
+      background-color: #008ac5; }
 
 .menu-wrapper {
   position: absolute;

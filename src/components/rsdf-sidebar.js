@@ -26,10 +26,10 @@ const sidebarbar = (props) => {
                             </Link>
                         </li>
                         <li className="fd-side-nav__item">
-                            <a className="fd-side-nav__link" href="#">
-                            <span className="fd-side-nav__icon sap-icon--sys-prev-page sap-icon--l" role="presentation"></span>
-                            <span className="fd-side-nav-name">Enviar e Solicitar</span>
-                            </a>
+                            <Link className="fd-side-nav__link" to='/transferencias'>
+                                <span className="fd-side-nav__icon sap-icon--sys-prev-page sap-icon--l" role="presentation"></span>
+                                <span className="fd-side-nav-name">Enviar e Solicitar</span>
+                            </Link>
                         </li>
                         <li className="fd-side-nav__item">
                             <a className="fd-side-nav__link" href="#">

@@ -135,6 +135,11 @@ const dashboard = (props) => {
                             </p>
                             <br></br>
                             <p>Não partilhamos os seus dados com ninguém.</p>
+                            <div className="panel-controllers">
+                                <Link className="fd-side-nav__link" to='/transferencias'>
+                                    <Button className="rsdf-default-button small">Associar um cartão</Button>
+                                </Link>
+                            </div>
                         </div>
                         </div>
                     </RSDF_Panel>

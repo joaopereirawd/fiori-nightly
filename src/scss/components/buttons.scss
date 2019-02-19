@@ -67,6 +67,9 @@
                 font-size:12px;
                 letter-spacing:.5px;
             }
+            &:hover {
+                background-color:darken($brand-color_2, 5%);
+            }
         }
     }    
 }

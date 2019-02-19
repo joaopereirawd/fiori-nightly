@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 //Views
 import Dashboard from './components/dashboard';
 import Actividade from './components/actividade';
+import Transferencias from './components/transferencias';
 
 class App extends Component {
   constructor(props) {
@@ -131,10 +132,11 @@ class App extends Component {
                 <div className="fd-shell__app">
                   <div className="fd-app">
                     <main className="fd-app__main">
-                      <Switch>
-                          <Route exact path='/' component={Dashboard}/>
-                          <Route exact path='/actividade' component={Actividade}/>
-                      </Switch>
+                        <Switch>
+                            <Route exact path='/' component={Dashboard}/>
+                            <Route exact path='/actividade' component={Actividade}/>
+                            <Route exact path='/transferencias' component={Transferencias}/>
+                        </Switch>
                     </main>
                   </div>
                 </div>
