@@ -1,10 +1,27 @@
 import React from 'react';
-import { Button } from 'fundamental-react';
 import userPhoto from '../../src/img/sophie.jpg';
 import RSDF_Panel from '../components/rsdf-panel.js';
 import RSDF_Table from '../components/rsdf-table.js';
 import RSDF_TableCards from '../components/rsdf-table-cards';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 
+import {
+    Button, 
+    Panel, 
+    PanelActions, 
+    PanelBody, 
+    PanelContent, 
+    PanelFilters, 
+    PanelFooter, 
+    PanelGrid, 
+    PanelHead, 
+    PanelHeader 
+} from 'fundamental-react';
+
+
+const clickBtnHandler = btn => {
+    return <Redirect to='/actividade'/>
+};
 
 const dashboard = (props) => {
     return (
@@ -42,7 +59,7 @@ const dashboard = (props) => {
                         </RSDF_Panel>
 
 
-                        <RSDF_Panel customClass="" colNumber={3}>
+                        <RSDF_Panel customClass="" colNumber={4}>
                             <div className="rsdf-panel fd-panel">
                                 <div className="fd-panel__body">
                                     <div className="rsdf-button-group">
@@ -55,7 +72,7 @@ const dashboard = (props) => {
                                         <Button className="paypal-btn-round more-opts ">
                                             <span>Visa</span>
                                         </Button>                                                
-                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </RSDF_Panel>
@@ -76,10 +93,15 @@ const dashboard = (props) => {
                                 </div>
                                 </div>
                                 <RSDF_Table></RSDF_Table>
+                                <div className="panel-controllers">
+                                    <Link className="fd-side-nav__link" to='/actividade'>
+                                        <Button className="rsdf-default-button small">Ver Actividade</Button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </RSDF_Panel>
-
+           
                     <RSDF_Panel colNumber={3}>
                         <div className="rsdf-panel fd-panel">
                         <div class="fd-panel__body">
@@ -89,12 +111,17 @@ const dashboard = (props) => {
                                 </div>
                             </div>
                             <RSDF_TableCards></RSDF_TableCards>
+                            <div className="panel-controllers">
+                                <Link className="fd-side-nav__link" to='/actividade'>
+                                    <Button className="rsdf-default-button small">Associar um cartão</Button>
+                                </Link>
+                            </div>
                         </div>
                         </div>
                     </RSDF_Panel>
 
 
-                    <RSDF_Panel colNumber={3}>
+                    <RSDF_Panel colNumber={4}>
                         <div className="rsdf-panel fd-panel highlighted">
                         <div class="fd-panel__body">
                             <div class="fd-tile">

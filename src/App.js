@@ -131,7 +131,7 @@ class App extends Component {
                 <div className="fd-shell__app">
                   <div className="fd-app">
                     <main className="fd-app__main">
-                    <Switch>
+                      <Switch>
                           <Route exact path='/' component={Dashboard}/>
                           <Route exact path='/actividade' component={Actividade}/>
                       </Switch>

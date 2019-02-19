@@ -57,8 +57,9 @@
         font-weight:600;
     }
     p {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 100;
+        line-height:normal; 
     }
     &.bottom-caption {
         position:relative;
@@ -149,7 +150,7 @@
 }
 
 .creditcard-table-wrapper {
-    max-height: 197px;
+    max-height: 189px;
     overflow: auto;
 }
 
@@ -158,6 +159,9 @@
     display: inline-block;
     left:-9px;
     float:left;
+        img {
+            width:60px;
+        }
 }
 
 .credit-card-info {
@@ -168,15 +172,17 @@
         span {
             &.cname {
                 position:relative;
-                font-size:18px;
+                font-size:15px;
                 width:100%;
                 display: inline-block;
                 line-height:normal;
                 color:#000;
             }
-            &.clabel {
+            &.clabel{
                 width:100%;
                 font-size:10px;
+                line-height:normal;
+                display: inherit;   
             }
         }
 }

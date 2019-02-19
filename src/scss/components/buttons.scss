@@ -45,3 +45,28 @@
         }
     }
 }
+
+.panel-controllers {
+    margin-top: 14px;
+    .fd-side-nav__link {
+        display: inline-block;
+        padding:0px;
+        &:hover {
+            background:transparent;
+        }
+    }
+    .fd-button { 
+        &.rsdf-default-button {
+            background-color:$brand-color_2;
+            color:#fff;
+            border-radius:50px;
+            &.small {
+                height: inherit;
+                padding: 6px 20px;
+                border: none;
+                font-size:12px;
+                letter-spacing:.5px;
+            }
+        }
+    }    
+}
