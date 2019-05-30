@@ -30,7 +30,7 @@ const dashboard = (props) => {
             <section className="fd-section">
                     <div className="fd-container fd-container--fluid">
                         
-                        <div className="fd-col--3 fd-panel sdf-profile-panel rsdf-no-background rsdf-no-shadow">
+                        <div className="fd-col--3 fd-col fd-panel sdf-profile-panel rsdf-no-background rsdf-no-shadow presentation-card">
                             <div className="fd-tile rsdf-no-background rsdf-no-shadow">
                                 <div className="fd-tile__media sdf-profile-photo-wrapper">
                                 <span className="fd-image--xl fd-image--circle" aria-label="TILE_MEDIA_ALT" style={{ backgroundImage: `url('${userPhoto}`}}></span>
@@ -42,7 +42,7 @@ const dashboard = (props) => {
                             </div>
                         </div>
 
-                        <RSDF_Panel customClass="" colNumber={5}>
+                        <RSDF_Panel customClass="fd-col" colNumber={5}>
                             <div className="rsdf-panel bottom-caption fd-panel">
                                 <div class="fd-panel__body">
                                     <div class="fd-tile">
@@ -59,7 +59,7 @@ const dashboard = (props) => {
                         </RSDF_Panel>
 
 
-                        <RSDF_Panel customClass="" colNumber={4}>
+                        <RSDF_Panel customClass="fd-col" colNumber={4}>
                             <div className="rsdf-panel fd-panel">
                                 <div className="fd-panel__body">
                                     <div className="rsdf-button-group">
@@ -83,7 +83,7 @@ const dashboard = (props) => {
                 <section className="fd-section">
                     <div className="fd-container fd-container--fluid">
 
-                    <RSDF_Panel colNumber={5}>
+                    <RSDF_Panel customClass="fd-col" colNumber={5}>
                         <div className="rsdf-panel fd-panel">
                             <div class="fd-panel__body">
                                 <div class="fd-tile">
@@ -102,7 +102,7 @@ const dashboard = (props) => {
                         </div>
                     </RSDF_Panel>
            
-                    <RSDF_Panel colNumber={3}>
+                    <RSDF_Panel customClass="fd-col" colNumber={3}>
                         <div className="rsdf-panel fd-panel">
                         <div class="fd-panel__body">
                             <div class="fd-tile">
@@ -121,7 +121,7 @@ const dashboard = (props) => {
                     </RSDF_Panel>
 
 
-                    <RSDF_Panel colNumber={4}>
+                    <RSDF_Panel customClass="fd-col" colNumber={4}>
                         <div className="rsdf-panel fd-panel highlighted">
                         <div class="fd-panel__body">
                             <div class="fd-tile">

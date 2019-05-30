@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/app.css';
 import { Shellbar, Menu, MenuList, MenuItem, Button } from 'fundamental-react';
-import brandLogo from '../src/img/paypal.svg';
+//import brandLogo from '../src/img/paypal.svg';
 import userPhoto from '../src/img/sophie.jpg';
 import RSDF_Sidebar from './components/rsdf-sidebar';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -106,48 +106,54 @@ class App extends Component {
 
     return (
       <Router>
-      <div className="App">
-          <div className={`fd-shell fd-shell--fundamentals has-sidebar ${(this.state.sideBarOpen) ? 'active' : 'desactive'}`}>
+        <div className="App">
+            <div className={`fd-shell fd-shell--fundamentals has-sidebar ${(this.state.sideBarOpen) ? 'active' : 'desactive'}`}>
 
-                <RSDF_Sidebar 
-                  open={this.state.sideBarOpen}
-                  toggle={this.sideBarToggle}
-                />
-
-                {/* Shellbar header container */}
-                <div className="fd-shell__header">
-                  <Shellbar
-                    copilot= {true}
-                    logo={<img src={brandLogo} alt='SAP' />}
-                    actions={this.appSttings}
-                    notifications={this.notifications}
-                    productTitle={false}
-                    profile={this.profile}
-                    searchInput={this.searchInput}
-                    profileMenu={this.profileMenu} />
-                </div>
-
-                {/* shell App */}
-                
-                <div className="fd-shell__app">
-                  <div className="fd-app">
-                    <main className="fd-app__main">
-                        <Switch>
-                            <Route exact path='/' component={Dashboard}/>
-                            <Route exact path='/actividade' component={Actividade}/>
-                            <Route exact path='/transferencias' component={Transferencias}/>
-                        </Switch>
-                    </main>
+                  {/* Shellbar header container */}
+                  <div className="fd-shell__header">
+                    <div className="m-hamb-wrapper">
+                        <div className="hambMenu" onClick={this.sideBarToggle}>
+                            <div class="menu-wrapper">
+                                <div className={`hamburger-menu`} ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <RSDF_Sidebar
+                      open={this.state.sideBarOpen}
+                      toggle={this.sideBarToggle}
+                    />
+                    <Shellbar
+                      copilot= {true}
+                      logo={<div className="logo-wrapper"><div className="brand-logo"></div></div>}
+                      actions={this.appSttings}
+                      notifications={this.notifications}
+                      productTitle={false}
+                      profile={this.profile}
+                      searchInput={this.searchInput}
+                      profileMenu={this.profileMenu} />
                   </div>
-                </div>
 
-                {/* Shell footer */}
-                <div className="fd-shell__footer">
-                    fd-shell__footer
-                </div>
+                  {/* shell App */}
+                  
+                  <div className="fd-shell__app">
+                    <div className="fd-app">
+                      <main className="fd-app__main">
+                          <Switch>
+                              <Route exact path='/' component={Dashboard}/>
+                              <Route exact path='/actividade' component={Actividade}/>
+                              <Route exact path='/transferencias' component={Transferencias}/>
+                          </Switch>
+                      </main>
+                    </div>
+                  </div>
+
+                  {/* Shell footer */}
+                  <div className="fd-shell__footer">
+                      fd-shell__footer
+                  </div>
+          </div>
+      
         </div>
-    
-      </div>
       </Router>
     );
   }

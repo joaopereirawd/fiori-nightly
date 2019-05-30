@@ -1,18 +1,27 @@
 .fd-shell {
-    
     &.has-sidebar {
         .fd-shell__header,
         .fd-shell__app,
         .fd-shell__footer {
             padding-left:70px;
             transition: ease .5s;
+                @include sm {
+                    padding-left:0px;
+                }
         } 
         &.active {
-        .fd-shell__header,
-        .fd-shell__app,
-        .fd-shell__footer {
-            padding-left:250px;
-        } 
+            .fd-shell__header,
+            .fd-shell__app,
+            .fd-shell__footer {
+                padding-left:250px;
+                    @include sm {
+                        padding-left:0px;
+                    }
+            } 
         }
     }
+}
+
+.fd-shell__header {
+    z-index:99999 !important;
 }

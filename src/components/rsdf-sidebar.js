@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const sidebarbar = (props) => {
+    console.log(props.sideBarOpen);
     return (
         <div>
             {/* RSDF Sidebar*/}
@@ -14,19 +15,19 @@ const sidebarbar = (props) => {
                     <nav className="fd-side-nav">
                         <ul className="fd-side-nav__list">
                         <li className="fd-side-nav__item">
-                            <Link className="fd-side-nav__link" to='/'>
-                            <span className="fd-side-nav__icon sap-icon--dimension sap-icon--l" role="presentation"></span>
-                            <span className="fd-side-nav-name">Resumo</span>
+                            <Link className="fd-side-nav__link" to='/' >
+                                <span className="fd-side-nav__icon sap-icon--dimension sap-icon--l" role="presentation"></span>
+                                <span className="fd-side-nav-name">Resumo</span>
                             </Link>
                         </li>
                         <li className="fd-side-nav__item">
-                            <Link className="fd-side-nav__link" to='/actividade'>
+                                <Link className="fd-side-nav__link" to='/actividade'>
                                 <span className="fd-side-nav__icon sap-icon--activities sap-icon--l" role="presentation"></span>
                                 <span className="fd-side-nav-name">Atividade</span>
                             </Link>
                         </li>
                         <li className="fd-side-nav__item">
-                            <Link className="fd-side-nav__link" to='/transferencias'>
+                            <Link className="fd-side-nav__link" to='#'>
                                 <span className="fd-side-nav__icon sap-icon--sys-prev-page sap-icon--l" role="presentation"></span>
                                 <span className="fd-side-nav-name">Enviar e Solicitar</span>
                             </Link>

@@ -5,9 +5,17 @@
     left:0px;
     top:0px;
     background-color: $brand-color_1;
-    z-index:9999;
+    z-index:2;
     transition:ease-in-out .4s;
     overflow:hidden;
+        @include sm {
+            transform: translateX(-100%);
+        }
+        .menu-wrapper {
+            @include sm {
+                display:none;
+            } 
+        }
         .fd-app__navigation {
             background:none;
             margin-top:80px;
@@ -35,6 +43,9 @@
         }
         &.active {
             width:250px;
+            @include sm {
+                transform: translateX(0px);
+            }
            .fd-app__navigation .fd-side-nav .fd-side-nav__link {
                 .fd-side-nav__icon {
                     padding-right:inherit;
@@ -43,5 +54,47 @@
                     opacity:1;
                 }                             
            }
+        }
+}
+
+
+/************
+* 
+* Mobile conditions
+* 
+*************/
+.m-hamb-wrapper{
+    position: relative;
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-right: 50px;
+    border-radius: 40px;
+    margin: 10px;
+    margin-top: 18px;
+    background: #eee;
+    z-index: 3;
+    display:none;
+    @include sm {
+        display:block;
+    } 
+        .menu-wrapper {
+            top: 12px;
+            left: 11px;
+            .hamburger-menu {
+                background-color:#009cde;
+                width:23px;
+                &:before {
+                    background-color:#009cde;
+                    width:23px;
+                    bottom:6px;
+                }
+                &:after {
+                    background-color:#009cde;
+                    width:23px;
+                    top:6px;
+                }                   
+            }
+
         }
 }

@@ -1,10 +1,28 @@
+/******************************************
+   *
+   * Header 
+   *
+******************************************/
+.fd-shellbar {
+    .logo-wrapper {
+        .brand-logo {
+            background-image:url('../img/paypal.svg');
+            width: 129px;
+            height: 31px;
+            background-repeat: no-repeat;
+                    @include sm {
+                       width: 27px;
+                    }
+        }
+    }
+}
+
 .fd-image--xl {
     width: 120px;
     height: 120px;
     max-width: 120px;
     max-height: 120px;
-    min-width: 120px;
-    min-height: 120px;
+
 }
 
 /******************************************
@@ -25,7 +43,33 @@
                 left: 8px;
                 border-radius: 50%;
                 z-index: 1;
-            }             
+                    @include rwd(1560) {
+                        width: 60px;
+                        height: 60px;
+                        top: 5px;
+                        left: 11px;
+                    }
+                    @include rwd(980) {
+                        width: 104px;
+                        height: 104px;
+                        top: 4px;
+                        left: 9px;
+                    }
+            } 
+            .fd-image--xl {
+                @include rwd(1560) {
+                    width:50px;
+                    height:50px;
+                    max-width: 50px;
+                    max-height: 50px; 
+                }
+                @include rwd(980) {
+                    width: 90px;
+                    height: 90px;
+                    max-width: 90px;
+                    max-height: 90px;
+                }
+            }            
     }
     .fd-tile__content {
         padding-left:30px;
@@ -34,6 +78,10 @@
             font-size:35px;
             line-height: 35px;
             margin-bottom: 10px;
+                    @include rwd(1560) {
+                        font-size:25px;
+                        line-height: 25px;
+                    }
         }
         p {}
     }
@@ -185,4 +233,26 @@
                 display: inherit;   
             }
         }
+}
+
+
+
+/******
+*
+* Layout and columns adjustments 
+*
+******/
+.fd-col {
+    margin-top: 20px;
+        @include rwd(980) {
+            width: 100%;
+        }
+}
+
+.fd-section {
+    padding:0px 20px;
+}
+
+.presentation-card {
+
 }

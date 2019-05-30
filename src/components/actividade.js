@@ -7,7 +7,9 @@ import { Menu, MenuList, MenuItem, Button, Table, Popover, Image } from 'fundame
 const dashboard = (props) => {
     return (
         <section class="fd-section">
-           
+            <div className="fd-section-title">
+                <h1>Actividade</h1>
+            </div>
                 <Table
                     headers={[<input type="checkbox" />, 'Avatar', 'email', 'First Name', 'Last Name', 'Date', ' ']}
                     tableData={[
