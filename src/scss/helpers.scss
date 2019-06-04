@@ -147,6 +147,7 @@
 ******************************************/
 .table-content {
     overflow:auto;
+    max-height: 176px;
         table {
             border:none;
         }
@@ -247,12 +248,51 @@
         @include rwd(980) {
             width: 100%;
         }
+        
+        &.min-height {
+            .rsdf-panel {
+                min-height:310px !important;
+            }
+        }            
+        
+
 }
 
 .fd-section {
     padding:0px 20px;
 }
 
-.presentation-card {
 
+.fd-section-content {
+    position:relative;
+    padding:40px 20px;
+    min-height:400px;
+        h1 {
+            color:#009cde;
+        }
+        .fd-table {
+            thead {
+               // display:none;
+            }
+            a {
+                letter-spacing: .5px;
+                font-size:14px;
+                color:#009cde;
+            }
+            .table-item {
+                letter-spacing: .5px;
+                font-size:14px;
+                    &.ti-date {
+                        font-weight: bold;
+                        color: #535353;
+                    }
+                    &.ti-grey {
+                        color:grey;
+                    }
+                    &.ti-value {
+                        font-weight:bold;
+                        color: #535353;
+                    }
+            }
+        }
 }

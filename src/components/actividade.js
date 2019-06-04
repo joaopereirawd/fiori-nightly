@@ -1,37 +1,31 @@
 import React from 'react';
-import RSDF_Panel from '../components/rsdf-panel.js';
-import RSDF_Table from '../components/rsdf-table.js';
 import { Menu, MenuList, MenuItem, Button, Table, Popover, Image } from 'fundamental-react';
 
 
 const dashboard = (props) => {
     return (
-        <section class="fd-section">
-            <div className="fd-section-title">
-                <h1>Actividade</h1>
-            </div>
+        <section class="fd-section fd-section-content">
+                <div className="fd-section-title">
+                    <h1>Actividade</h1>
+                </div>
                 <Table
-                    headers={[<input type="checkbox" />, 'Avatar', 'email', 'First Name', 'Last Name', 'Date', ' ']}
+                    headers={['Data', 'Destinatário', 'Tipo', 'Valor', 'Opções']}
                     tableData={[
                         {
                             rowData: [
-                                <input type="checkbox" />,
-                                <Image size="m" photo="https://robohash.org/green?size=50x50" />,
+                                <span class="table-item ti-date">30/05/2019</span>,
                                 <a href="#" className="fd-has-font-weight-semi">
-                                    user.name@email.com
+                                    Microsoft Payments
                                 </a>,
-                                'First Name',
-                                'Last Name',
-                                '01/26/17',
+                                <span class="table-item ti-grey">Pagamento</span>,
+                                <span class="table-item ti-value">- €15,83</span>,
                                 <Popover
                                     control={<Button option="light" glyph="vertical-grip" />}
                                     body={
                                         <Menu>
                                             <MenuList>
-                                                <MenuItem url="/">Option 1</MenuItem>
-                                                <MenuItem url="/">Option 2</MenuItem>
-                                                <MenuItem url="/">Option 3</MenuItem>
-                                                <MenuItem url="/">Option 4</MenuItem>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
                                             </MenuList>
                                         </Menu>
                                     }
@@ -40,23 +34,19 @@ const dashboard = (props) => {
                         },
                         {
                             rowData: [
-                                <input type="checkbox" />,
-                                <Image size="m" photo="https://robohash.org/brown?size=50x50" />,
+                                <span class="table-item ti-date">20/02/2019</span>,
                                 <a href="#" className="fd-has-font-weight-semi">
-                                    florence.garcia@qwerty.io
+                                    Ebay
                                 </a>,
-                                'First Name',
-                                'Last Name',
-                                '07/29/18',
+                                <span class="table-item ti-grey">Compra</span>,
+                                <span class="table-item ti-value">- €25,83</span>,
                                 <Popover
                                     control={<Button option="light" glyph="vertical-grip" />}
                                     body={
                                         <Menu>
                                             <MenuList>
-                                                <MenuItem url="/">Option 1</MenuItem>
-                                                <MenuItem url="/">Option 2</MenuItem>
-                                                <MenuItem url="/">Option 3</MenuItem>
-                                                <MenuItem url="/">Option 4</MenuItem>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
                                             </MenuList>
                                         </Menu>
                                     }
@@ -65,23 +55,19 @@ const dashboard = (props) => {
                         },
                         {
                             rowData: [
-                                <input type="checkbox" />,
-                                <Image size="m" photo="https://robohash.org/Q27.png?set=set1&size=50x50" />,
+                                <span class="table-item ti-date">2/01/2019</span>,
                                 <a href="#" className="fd-has-font-weight-semi">
-                                    mark.helper@qwerty.io
+                                    Nike.com
                                 </a>,
-                                'First Name',
-                                'Last Name',
-                                '05/26/18',
+                                <span class="table-item ti-grey">Compra</span>,
+                                <span class="table-item ti-value">- €89,83</span>,
                                 <Popover
                                     control={<Button option="light" glyph="vertical-grip" />}
                                     body={
                                         <Menu>
                                             <MenuList>
-                                                <MenuItem url="/">Option 1</MenuItem>
-                                                <MenuItem url="/">Option 2</MenuItem>
-                                                <MenuItem url="/">Option 3</MenuItem>
-                                                <MenuItem url="/">Option 4</MenuItem>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
                                             </MenuList>
                                         </Menu>
                                     }
@@ -90,23 +76,19 @@ const dashboard = (props) => {
                         },
                         {
                             rowData: [
-                                <input type="checkbox" />,
-                                <Image size="m" photo="https://robohash.org/water?&size=50x50" />,
+                                <span class="table-item ti-date">30/05/2019</span>,
                                 <a href="#" className="fd-has-font-weight-semi">
-                                    user.name@email.com
+                                    Microsoft Payments
                                 </a>,
-                                'First Name',
-                                'Last Name',
-                                '01/26/14',
+                                <span class="table-item ti-grey">Pagamento</span>,
+                                <span class="table-item ti-value">- €15,83</span>,
                                 <Popover
                                     control={<Button option="light" glyph="vertical-grip" />}
                                     body={
                                         <Menu>
                                             <MenuList>
-                                                <MenuItem url="/">Option 1</MenuItem>
-                                                <MenuItem url="/">Option 2</MenuItem>
-                                                <MenuItem url="/">Option 3</MenuItem>
-                                                <MenuItem url="/">Option 4</MenuItem>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
                                             </MenuList>
                                         </Menu>
                                     }
@@ -115,23 +97,19 @@ const dashboard = (props) => {
                         },
                         {
                             rowData: [
-                                <input type="checkbox" />,
-                                <Image size="m" photo="https://robohash.org/water?&size=50x50" />,
+                                <span class="table-item ti-date">20/02/2019</span>,
                                 <a href="#" className="fd-has-font-weight-semi">
-                                    user.name@email.com
+                                    Ebay
                                 </a>,
-                                'First Name',
-                                'Last Name',
-                                '01/26/14',
+                                <span class="table-item ti-grey">Compra</span>,
+                                <span class="table-item ti-value">- €25,83</span>,
                                 <Popover
                                     control={<Button option="light" glyph="vertical-grip" />}
                                     body={
                                         <Menu>
                                             <MenuList>
-                                                <MenuItem url="/">Option 1</MenuItem>
-                                                <MenuItem url="/">Option 2</MenuItem>
-                                                <MenuItem url="/">Option 3</MenuItem>
-                                                <MenuItem url="/">Option 4</MenuItem>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
                                             </MenuList>
                                         </Menu>
                                     }
@@ -140,23 +118,82 @@ const dashboard = (props) => {
                         },
                         {
                             rowData: [
-                                <input type="checkbox" />,
-                                <Image size="m" photo="https://robohash.org/water?&size=50x50" />,
+                                <span class="table-item ti-date">2/01/2019</span>,
                                 <a href="#" className="fd-has-font-weight-semi">
-                                    user.name@email.com
+                                    Nike.com
                                 </a>,
-                                'First Name',
-                                'Last Name',
-                                '01/26/14',
+                                <span class="table-item ti-grey">Compra</span>,
+                                <span class="table-item ti-value">- €89,83</span>,
                                 <Popover
                                     control={<Button option="light" glyph="vertical-grip" />}
                                     body={
                                         <Menu>
                                             <MenuList>
-                                                <MenuItem url="/">Option 1</MenuItem>
-                                                <MenuItem url="/">Option 2</MenuItem>
-                                                <MenuItem url="/">Option 3</MenuItem>
-                                                <MenuItem url="/">Option 4</MenuItem>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
+                                            </MenuList>
+                                        </Menu>
+                                    }
+                                />
+                            ]
+                        },
+                        {
+                            rowData: [
+                                <span class="table-item ti-date">30/05/2019</span>,
+                                <a href="#" className="fd-has-font-weight-semi">
+                                    Microsoft Payments
+                                </a>,
+                                <span class="table-item ti-grey">Pagamento</span>,
+                                <span class="table-item ti-value">- €15,83</span>,
+                                <Popover
+                                    control={<Button option="light" glyph="vertical-grip" />}
+                                    body={
+                                        <Menu>
+                                            <MenuList>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
+                                            </MenuList>
+                                        </Menu>
+                                    }
+                                />
+                            ]
+                        },
+                        {
+                            rowData: [
+                                <span class="table-item ti-date">20/02/2019</span>,
+                                <a href="#" className="fd-has-font-weight-semi">
+                                    Ebay
+                                </a>,
+                                <span class="table-item ti-grey">Compra</span>,
+                                <span class="table-item ti-value">- €25,83</span>,
+                                <Popover
+                                    control={<Button option="light" glyph="vertical-grip" />}
+                                    body={
+                                        <Menu>
+                                            <MenuList>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
+                                            </MenuList>
+                                        </Menu>
+                                    }
+                                />
+                            ]
+                        },
+                        {
+                            rowData: [
+                                <span class="table-item ti-date">2/01/2019</span>,
+                                <a href="#" className="fd-has-font-weight-semi">
+                                    Nike.com
+                                </a>,
+                                <span class="table-item ti-grey">Compra</span>,
+                                <span class="table-item ti-value">- €89,83</span>,
+                                <Popover
+                                    control={<Button option="light" glyph="vertical-grip" />}
+                                    body={
+                                        <Menu>
+                                            <MenuList>
+                                                <MenuItem url="/">Ver detalhe</MenuItem>
+                                                <MenuItem url="/">Apagar</MenuItem>
                                             </MenuList>
                                         </Menu>
                                     }

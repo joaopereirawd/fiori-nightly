@@ -6,9 +6,6 @@ import {
     TabGroup
 } from 'fundamental-react';
 
-
-
-
 const dashboard = (props) => {
     return (
     <TabGroup
