@@ -1,7 +1,7 @@
 # fiori-nightly 🌼
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dc61b5a5-ec18-4e58-b3c3-3d9ff920e521/deploy-status)](https://app.netlify.com/sites/paypal-fiori/deploys)
 
-This is a first approach to SAP Fiori 3.0 with React.js. 
+This is a first approach to SAP Fundamentals with React.js. 
 For this I have chosen re-design user account of Paypal and develop an application with fiori-fundamentals framework.
 
 Demo:</br>
